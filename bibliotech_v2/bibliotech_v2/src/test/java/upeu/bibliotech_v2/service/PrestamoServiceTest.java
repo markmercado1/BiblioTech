@@ -58,7 +58,7 @@ class PrestamoServiceTest {
 
     @Test
     void debePermitirPrestamoCuandoHayEjemplaresDisponibles() {
-        assertFalse(prestamoService.puedePrestar(1L, 10L));
+        assertTrue(prestamoService.puedePrestar(1L, 10L));
     }
 
     @Test
